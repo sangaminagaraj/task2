@@ -1,1 +1,94 @@
+DOCUMENT AND WINDOW OBJECT
+
+
+
+                                        DOCUMENT OBJECT
+
+Document Object:
+
+       => The document object represents a web page that is loaded in the browser
+       => It serves as an interface to access and manipulate the content,structure, 
+       and styles of a web page.
+
+                  Syntax:
+
+                           document.method_name;
+
+DOM Structure:
+
+      * The document object provides a hierarchical representation of the HTML elements on a
+        webpage, allowing developers to navigate, modify, and manipulate the content dynamically.
+
+Methods:
+     
+       * The document object offers methods like getElementById(),getElementsByClassName(), 
+         and querySelector(),enabling developers to select specific elements based on their IDs,
+         classes, or other attributes.
+
+Properties:
+
+      * Properties such as document.title, document.URL, and document.body provide information
+        about the document's title, URL, and body, respectively.
+
+Content Manipulation:
+
+      * Through the document object, you can dynamically create, modify, or delete elements, 
+        attributes, and text content on a webpage.
+
+Example:
+     
+      // Change the title of the document
+document.title = "New Web page";
+
+// Get element by ID and change its content
+document.getElementById("myElement").innerHTML = "Modify Content";
+
+
+      * => while the document object focuses on representing and manipulating the content within an HTML document.
+
+
+                                                       WINDOW OBJECT
+
+
+Window Object:
+
+     => The window object is the topmost object of the DOM hierarchy
+     => It represents a browser window or frame that displays the contents of the webpage. 
+     => Whenever a window appears on the screen to display the contents of the document, the window object is created. 
+
+                               Syntax:
+
+                                     window.property_name;
+
+Global Scope: 
+
+      * The window object serves as the global scope in JavaScript, meaning variables and functions declared without the var,
+        let, or const keyword become properties of the window object. 
+
+Browser Information: 
+
+      * The window object offers properties like window.innerWidth, window.innerHeight, and window.navigator to provide
+        information about the browser's dimensions, navigator object, and other related details. 
+
+Navigation: 
+
+      * Methods such as window.open(), window.close(), and window.location allow developers to control browser navigation, 
+        open new windows or tabs, and manipulate the current URL.
+
+Timers:
+
+      * The window object provides functions like setTimeout(), setInterval(), and clearTimeout() to manage 
+        time-based operations and execute code asynchronously.
+
+Example:
+
+               // Open a new window
+        window.open("https://www.example.com");
+
+          // Resize the current window
+          window.resizeTo(500, 500);
+
+       * => The window object provides a broader scope, encompassing the browser window's properties, methods, and functionalities. 
+
+
 
